@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (expenses(); as expensesRef) {
+      <div>
+        <h2 data-cy="expensesDetailsHeading"><span jhiTranslate="expensesApp.expenses.detail.title">Expenses</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ expensesRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="expensesApp.expenses.description">Description</span></dt>
+          <dd>
+            <span>{{ expensesRef.description }}</span>
+          </dd>
+          <dt><span jhiTranslate="expensesApp.expenses.amount">Amount</span></dt>
+          <dd>
+            <span>{{ expensesRef.amount }}</span>
+          </dd>
+          <dt><span jhiTranslate="expensesApp.expenses.date">Date</span></dt>
+          <dd>
+            <span>{{ expensesRef.date | formatMediumDatetime }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/expenses', expensesRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

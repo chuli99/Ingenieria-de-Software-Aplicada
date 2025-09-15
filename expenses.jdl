@@ -1,0 +1,24 @@
+application {
+  config {
+    baseName Expenses
+    applicationType monolith
+    authenticationType jwt
+    packageName com.jhipster.demo.expenses
+    prodDatabaseType mysql
+    cacheProvider ehcache
+    buildTool maven
+    clientFramework angular
+    testFrameworks [cypress]
+  }
+  entities Expenses
+}
+
+entity Expenses {
+  description String required maxlength(200)
+  amount BigDecimal required
+  date Instant required
+}
+
+dto Expenses with mapstruct
+service Expenses with serviceClass
+paginate Expenses with pagination

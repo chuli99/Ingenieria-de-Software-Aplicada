@@ -1,0 +1,20 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "Expenses",
+    "buildTool": "maven",
+    "cacheProvider": "ehcache",
+    "clientFramework": "angular",
+    "devServerPort": 4200,
+    "entities": ["Expenses"],
+    "jhipsterVersion": "8.7.1",
+    "jwtSecretKey": "ZmE4YTZjNjBkMmI5ZDg3ZTcxY2IxMmZmNjRiMmY0YzhjZmExYzgzOTkxMWJhMWNhYjcwYzAzN2NiYTUyNjliMTkwMzk4OTcwNDE5MDc0MjBjOTVkN2Q2OGEyNTUwYWE5ZDNhOGMzODFhYzY1OGFhNTg5YjY1ZDcwYTU0MTMwZTQ=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1757965943000,
+    "nativeLanguage": "en",
+    "packageName": "com.jhipster.demo.expenses",
+    "prodDatabaseType": "mysql",
+    "testFrameworks": ["cypress"]
+  }
+}
