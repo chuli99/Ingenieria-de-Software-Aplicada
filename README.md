@@ -79,21 +79,21 @@ Link de repositorio:
 
 ## Jenkins
 
-Pasos para la ejecucion de Jenkins:
-1- Cree manualmente el Jenkinsfile en la raiz del proyecto (jhipster ci-dc no funcionaba)
-2- Modifique el POM con <image>XXXXX:latest</image>
+Pasos para la ejecucion de Jenkins:  
+1- Cree manualmente el Jenkinsfile en la raiz del proyecto (jhipster ci-dc no funcionaba)  
+2- Modifique el POM con <image>XXXXX:latest</image>  
 3- Ejecute:
-docker container run -d --name jenkins -p 8090:8080 -p 50000:50000 jenkins/jenkins
+docker container run -d --name jenkins -p 8090:8080 -p 50000:50000 jenkins/jenkins  
 4- Luego:
 docker exec -it jenkins bash
 cd /var/jenkins_home/secrets/
 cat initialAdminPassword
-(PARA OBTENER CREDENCIALES)
+(PARA OBTENER CREDENCIALES)  
 5- Acceder a:
 
-- http://localhost:8090
-  6- Cree tareas con configuracion de la catedra
-  7- Buildeamos el proyecto
+- http://localhost:8090  
+  6- Cree tareas con configuracion de la catedra  
+  7- Buildeamos el proyecto  
   8- Agrego token de acceso en credentials por error.
 
 ### Docker Hub
