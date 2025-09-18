@@ -91,10 +91,11 @@ cat initialAdminPassword
 (PARA OBTENER CREDENCIALES)  
 5- Acceder a:
 
-- http://localhost:8090  
-  6- Cree tareas con configuracion de la catedra  
-  7- Buildeamos el proyecto  
-  8- Agrego token de acceso en credentials por error.
+- http://localhost:8090
+
+6- Cree tareas con configuracion de la catedra  
+7- Buildeamos el proyecto  
+8- Agrego token de acceso en credentials por error.
 
 ### Docker Hub
 
